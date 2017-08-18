@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ttafall.radioflexboxgroup.MainActivity">
+
+
+    <com.ttafall.radioflexboxgroup.RadioFlexboxGroup
+        android:id="@+id/rg_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:justifyContent="space_around"
+        app:flexWrap="wrap">
+
+        <RadioButton
+            android:id="@+id/radio_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="不限" />
+
+        <RadioButton
+            android:id="@+id/radio_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="精选项目" />
+
+        <RadioButton
+            android:id="@+id/radio_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="转让项目" />
+
+    </com.ttafall.radioflexboxgroup.RadioFlexboxGroup>
+
+    <com.ttafall.radioflexboxgroup.RadioFlexboxGroup
+        android:id="@+id/rg_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        app:flexDirection="column"
+        app:justifyContent="space_around"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg_1">
+
+        <RadioButton
+            android:id="@+id/radio_11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/radio_text_coloraccent_select"
+            android:text="不限" />
+
+        <RadioButton
+            android:id="@+id/radio_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/radio_text_coloraccent_select"
+            android:text="精选项目" />
+
+        <RadioButton
+            android:id="@+id/radio_13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/radio_text_coloraccent_select"
+            android:checked="true"
+            android:text="转让项目" />
+
+
+    </com.ttafall.radioflexboxgroup.RadioFlexboxGroup>
+
+
+    <com.ttafall.radioflexboxgroup.RadioFlexboxGroup
+        android:id="@+id/rg_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="16dp"
+        app:flexDirection="row_reverse"
+        app:justifyContent="space_between"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg_2">
+
+        <RadioButton
+            android:id="@+id/radio_22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radio_select"
+            android:button="@null"
+            android:paddingBottom="4dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="4dp"
+            android:textColor="@color/radio_text_select"
+            android:text="\t\t不限\t\t" />
+
+        <RadioButton
+            android:id="@+id/radio_23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radio_select"
+            android:button="@null"
+            android:checked="true"
+            android:paddingBottom="4dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="4dp"
+            android:textColor="@color/radio_text_select"
+            android:text="精选项目" />
+
+        <RadioButton
+            android:id="@+id/radio_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radio_select"
+            android:button="@null"
+            android:paddingBottom="4dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="4dp"
+            android:textColor="@color/radio_text_select"
+            android:text="转让项目" />
+
+
+    </com.ttafall.radioflexboxgroup.RadioFlexboxGroup>
+
+</android.support.constraint.ConstraintLayout>
